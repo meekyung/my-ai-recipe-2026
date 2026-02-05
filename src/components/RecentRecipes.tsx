@@ -4,6 +4,7 @@ import supabase from '../../utils/supabase.ts';
 type RecipeResult = {
   id: number;
   title: string;
+  recipe: string;
   image_url: string;
   created_at: string;
 };
