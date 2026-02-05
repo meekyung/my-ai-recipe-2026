@@ -19,7 +19,7 @@ export default function RecentRecipe() {
       try {
           //최근 생성된 레시피 5개 불러오기
           const { data, error } = await supabase
-            .from<RecipeResult>('recipes')
+            .from('recipes')
             .select('*')
             .order('created_at', { ascending: false })
             .limit(5);
